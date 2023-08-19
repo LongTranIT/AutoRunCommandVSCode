@@ -31,6 +31,11 @@
                     "type": "boolean",
                     "default": true,
                     "description": "Enable or disable a feature in My Extension"
+                },
+                "extensionSettings.command": {
+                    "type": "string",
+                    "default": "npm start",
+                    "description": "The command will be run"
                 }
             }
         }
