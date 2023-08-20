@@ -27,15 +27,20 @@
         "configuration": {
             "title": "Auto Run Command",
             "properties": {
-                "extensionSettings.enableFeature": {
+                "enableFeature": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable or disable a feature in My Extension"
                 },
-                "extensionSettings.command": {
+                "command": {
                     "type": "string",
                     "default": "npm start",
                     "description": "The command will be run"
+                },
+                "projectPath": {
+                    "type": "string",
+                    "default": "",
+                    "description": "The project's path will be run\n(Run first project in work space if empty)"
                 }
             }
         }
