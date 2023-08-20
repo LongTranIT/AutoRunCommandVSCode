@@ -1,8 +1,10 @@
 {
     "name": "autotuncommand",
     "displayName": "AutoRunCommand",
-    "description": "Run command when open VSCode",
-    "version": "0.0.1",
+    "description": "Automatically runs a specified command when VSCode is opened",
+    "version": "1.0.0",
+    "publisher": "LongTranIT",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.81.0"
     },
@@ -43,6 +45,11 @@
                     "default": "",
                     "description": "The project's path will be run\n(Run first project in workspace if empty)",
                     "order": 1
+                },
+                "closedTime": {
+                    "type": "string",
+                    "default": "",
+                    "description": "The project's path will be run\n(Run first project in workspace if empty)"
                 },
                 "addProject": {
                     "type": "boolean",

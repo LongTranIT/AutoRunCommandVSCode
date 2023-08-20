@@ -47,7 +47,3 @@ You can add project paths to your workspace for easy access. This can be helpful
 3. Open VSCode, and the command will be automatically executed.
 
 Enjoy the convenience of automating tasks and managing your projects with the Auto Run Command extension for Visual Studio Code!
-
-## License
-
-This extension is licensed under the [PTN Global](LongTranIT).
