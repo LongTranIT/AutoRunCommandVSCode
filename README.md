@@ -1,71 +1,53 @@
-# AutoRunCommand README
+# Auto Run Command Extension for Visual Studio Code
 
-This is the README for your extension "AutoRunCommand". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code (VSCode) extension provides the following functionality:
+
+-   Automatically runs a specified command when VSCode is opened.
+-   Allows you to configure the command to run via VSCode settings.
+-   Allows you to specify a project path via VSCode settings, and the configured command will be executed within that project path.
+-   If no project path is configured, the extension will run the command within the first project/workspace it finds.
+-   Provides the ability to add project paths to your workspace for easy access.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Auto Run Command
 
-For example if there is an image subfolder under your extension project workspace:
+Upon opening VSCode, this extension will automatically execute a command as configured in the VSCode settings. This can be useful for tasks like starting a development server or running a specific script.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Command Configuration
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+You can customize the command to run by editing your VSCode settings. To do this:
 
-## Requirements
+1. Open VSCode settings (File > Preferences > Settings).
+2. Search for the extension's settings by typing "Auto Run Command" in the search bar.
+3. Configure the desired command to run.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Project Path Configuration
 
-## Extension Settings
+This extension allows you to specify a project path in your VSCode settings. The configured command will be executed within this project path. To set a project path:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Open VSCode settings (File > Preferences > Settings).
+2. Search for the extension's settings by typing "Auto Run Command" in the search bar.
+3. Enter the desired project path.
 
-For example:
+If no project path is configured, the extension will automatically run the command within the first project or workspace it finds.
 
-This extension contributes the following settings:
+### Add Project Path to Workspace
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+You can add project paths to your workspace for easy access. This can be helpful when you have multiple projects and want to quickly switch between them. To add a project path:
 
-## Known Issues
+1. Open your workspace.
+2. Click on the "Auto Run Command" icon in the VSCode sidebar.
+3. Use the "Add Project Path" option to include the desired project path in your workspace.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Usage
 
-## Release Notes
+1. Install the extension from the VSCode Marketplace.
+2. Configure the command to run and, optionally, the project path in your VSCode settings.
+3. Open VSCode, and the command will be automatically executed.
 
-Users appreciate release notes as you update your extension.
+Enjoy the convenience of automating tasks and managing your projects with the Auto Run Command extension for Visual Studio Code!
 
-### 1.0.0
+## License
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is licensed under the [PTN Global](LongTranIT).

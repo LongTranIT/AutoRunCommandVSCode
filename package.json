@@ -35,12 +35,20 @@
                 "command": {
                     "type": "string",
                     "default": "npm start",
-                    "description": "The command will be run"
+                    "description": "The command will be run",
+                    "order": 0
                 },
                 "projectPath": {
                     "type": "string",
                     "default": "",
-                    "description": "The project's path will be run\n(Run first project in work space if empty)"
+                    "description": "The project's path will be run\n(Run first project in workspace if empty)",
+                    "order": 1
+                },
+                "addProject": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Add project path above to workspace",
+                    "order": 2
                 }
             }
         }
