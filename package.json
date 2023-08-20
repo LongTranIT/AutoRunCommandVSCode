@@ -1,5 +1,5 @@
 {
-    "name": "autotuncommand",
+    "name": "autoruncommand",
     "displayName": "AutoRunCommand",
     "description": "Automatically runs a specified command when VSCode is opened",
     "version": "1.0.0",
@@ -29,11 +29,6 @@
         "configuration": {
             "title": "Auto Run Command",
             "properties": {
-                "enableFeature": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Enable or disable a feature in My Extension"
-                },
                 "command": {
                     "type": "string",
                     "default": "npm start",
@@ -46,16 +41,23 @@
                     "description": "The project's path will be run\n(Run first project in workspace if empty)",
                     "order": 1
                 },
-                "closedTime": {
-                    "type": "string",
-                    "default": "",
-                    "description": "The project's path will be run\n(Run first project in workspace if empty)"
-                },
                 "addProject": {
                     "type": "boolean",
                     "default": false,
                     "description": "Add project path above to workspace",
                     "order": 2
+                },
+                "reloadTime": {
+                    "type": "number",
+                    "default": 30,
+                    "description": "Reload time of workspace, to prevent re-run command when Developer: Reload window is selected",
+                    "order": 3
+                },
+                "showReloadTimeInNotification": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Show reload time in notification",
+                    "order": 4
                 }
             }
         }
