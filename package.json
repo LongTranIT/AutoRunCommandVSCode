@@ -1,6 +1,6 @@
 {
     "name": "autoruncommand",
-    "displayName": "AutoRunCommand",
+    "displayName": "Auto Run Command",
     "description": "Automatically runs a specified command when VSCode is opened",
     "version": "1.0.0",
     "publisher": "LongTranIT",
